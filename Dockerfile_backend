@@ -1,0 +1,5 @@
+FROM python:3.9-slim
+WORKDIR /app
+COPY app_backend.py .
+RUN pip install flask redis
+CMD ["python", "app_backend.py"]
